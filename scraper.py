@@ -48,6 +48,7 @@ def parse_home():
             links_to_notices = parsed.xpath(XPATH_LINK_TO_ARTICLE)
             links_to_notices=["https://vanguardia.com.mx"+ y for y in links_to_notices]
             #a ver si asi
+            print(links_to_notices)
 
             today = datetime.date.today().strftime('%d-%m-%Y')
             if not os.path.isdir(today):
